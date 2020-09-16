@@ -1,63 +1,27 @@
-# This is my 3rd attempt at the classic Python Snake Game...
+# This is my 4th attempt at the classic Python Snake Game...
 
-import pygame
-import math
-import random
-import tkinter as tk
-from tkinter import messagebox
+import pygame, sys
 
-class cube(object):
-    rows = 0
-    w = 0
-    def __init__(self,start,dirnx=1,dirny=0,color=(255,0,0)):
-        pass
+pygame.init()
 
-    def move(self, dirnx, dirny):
-        pass
+DISPLAYSURF = pygame.display.set_mode((800, 600))
+#BASICFONT = pygame.font.Font('freesansbold.ttf')
+CLOCK = pygame.time.Clock()
+pygame.display.set_caption('SerpentX')
 
-    def draw(self, surface, eyes=False):
-        pass
+while True: #main game loop
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            sys.exit()
+        elif event.type == pygame.KEYDOWN:
+          if event.key == pygame.K_ESCAPE:
+            pygame.quit()
+            sys.exit()
 
-class snake(object):
-    def __init__(self, color, pos):
-        pass
-
-    def move(self):
-        pass
-
-    def reset(self, pos):
-        pass
-
-    def addCube(self):
-        pass
-
-    def draw(self, surface):
-        pass
-
-    def drawGrid(w, rows, surface):
-        pass
-
-    def redrawWindow(surface):
-        pass
-
-    def randomSnack(rows, items):
-        pass
-
-    def message_box(subject, content):
-        pass
-
-    def main():
-        pass
-
-    rows =
-    w =
-    h =
-
-    cube.rows = rows
-    cube.w = w
-
-    main()
-
+    DISPLAYSURF.fill((255,255,255))
+    pygame.display.update()
+    CLOCK.tick(60)
 
 
 
