@@ -2,6 +2,16 @@
 
 import pygame, sys
 
+# draw window
+# update the game logic
+# handle input
+# use the data to draw graphics
+
+# clear the screen
+# update the game
+# draw the game
+
+
 pygame.init()
 
 DISPLAYSURF = pygame.display.set_mode((800, 600))
